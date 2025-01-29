@@ -4,19 +4,26 @@ body {
 }
 nav {
     background-color: lightgrey;
-    
+    text-align: center;
 }
 a {
 color: white;
-
+text-align: center;
+}
+a:hover {
+    background-color: black;
 }
 h1 {
     color: dimgray;
-
+    text-align: center;
 }
 p {
     font-style: italic;
     font-size: 20px;
     color:dimgrey;
+    text-align: center;
 
+}
+img {
+    margin: 0 auto;
 }
