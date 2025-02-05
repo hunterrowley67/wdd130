@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    max-width: 1600px;
+    background-color: grey;
+}
+#circles img {
+    width: 100%;
+    height: 25%;
+}
+#lower {
+    text-align: center;
+}
+#desk, #graphic, #person {
+    display: inline-block;
+    margin: 5%;
+}
+#desk img {
+    border: 15px, #444444;
+    border-style: solid;
+    border-radius: 50%;
+    width: 250px;
+    display: inline-block;
+}
+#graphic img{
+    border: 15px, #444444; 
+    border-style: solid;
+    border-radius: 50%;
+    display: inline-block;
+    width: 250px;
+}
+#person img{
+    border: 15px, #444444;
+    border-style: solid;
+    border-radius: 50%;
+    display: inline-block;
+    width: 250px;
+}
