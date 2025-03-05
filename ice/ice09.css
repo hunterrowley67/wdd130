@@ -8,7 +8,7 @@
 body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 300px 1fr;
     justify-content: center;
     align-content: center;
     font-family: 'Roboto Slab';
