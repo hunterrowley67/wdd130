@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+    font-family: 'Roboto Slab';
+}
+
+#header_image {
+    width: 100%;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    padding-bottom: 15px;
+}
+#central_content {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    justify-content: center;
+}
+
+#small_heading {
+    color: darkblue;
+    font-size: .9em;
+    padding: 5px;
+}
+
+#large_heading {
+    padding-bottom: 30px;
+}
+
+#body_content {
+    padding-bottom: 30px;
+}
+
+#small_heading, #large_heading, #body_content {
+    justify-content: center;
+    text-align: center;
+}
+
+#lower_card {
+    grid-row: 3/4;
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px 50px;
+    background-color: #3f5b8b;
+    color: white;
+    column-gap: 1px;
+}
+#numberbox1, #numberbox2, #numberbox3 {
+    align-self: last baseline;
+    font-size: 1.5em;
+    justify-self: center;
+    
+}
+sup {
+    font-size: .5em;
+}
+#textbox1, #textbox2, #textbox3 {
+    font-size: .8em;
+    justify-self: center;
+}
