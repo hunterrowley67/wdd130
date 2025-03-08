@@ -207,6 +207,69 @@ footer .social a:hover {
     background-color: #2596be;
 }
 
+/* Faq Page */
+
+.question {
+    cursor: pointer;
+    transition: transform .5s;
+}
+.question:hover {
+    opacity: .6;
+    transform: scale(1.1);
+}
+.answer {
+    display: none;
+}
+#faqmain {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-rows: 450px 700px 1300px; */
+    grid-template-rows: 450px .5fr 1fr;
+    gap: 10px;
+}
+#faq-intro img {
+    width: 98%;
+    align-self: center;
+    z-index: -1;
+    border: solid;
+    border-radius: 10%;
+    box-sizing: border-box;
+    border-color: #2596be;
+}
+#faq-intro {
+    grid-column: 1/4;
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: 1fr .8fr 1fr;
+    grid-template-rows: 300px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#people-faq {
+    justify-self: right;
+}
+#rafting-faq {
+    justify-self: left;
+}
+#faqtitle {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    justify-self: center;
+    align-self: center;
+    font-size: 3em;
+}
+#questions {
+    grid-column: 1/4;
+    grid-row: 2/4;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: .4fr .7fr;
+    background-color: #2596be;
+}
+.questionbox {
+    padding: 50px;
+}
+
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;
