@@ -20,7 +20,7 @@ header {
     background-color: #667c84;
     display: grid;
     grid-template-columns: 150px auto;
-    width: 1fr;
+    width: 100%;
 }
 nav {
     background-color: #667c84;
@@ -82,7 +82,9 @@ footer div {
 .social a {
     padding: 15px;
 }
-
+.x img{
+    width: 65px;
+}
 /* Home page css */
 #home {
     display: grid;
