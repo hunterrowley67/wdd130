@@ -82,9 +82,10 @@ footer div {
 .social a {
     padding: 15px;
 }
-.x img{
+.x {
     width: 65px;
 }
+
 /* Home page css */
 #home {
     display: grid;
