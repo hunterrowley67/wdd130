@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Birthstone&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #ebebf3;
+    font-family: "Cormorant+Garamond", Courier, Trebuchet;
+}
+h1, h2 {
+    font-family: "birthstone", Georgia, Garamond;
+    font-size: 3em;
+}
+
+/* Nav bar css */
+header {
+    background-color: #667c84;
+    display: grid;
+    grid-template-columns: 150px auto;
+    width: 1fr;
+}
+nav {
+    background-color: #667c84;
+    display: flex;
+    font-size: 2em;
+    justify-content: space-around;
+    width: 100%;
+}
+nav a, header a{
+    padding: 20px;
+    text-decoration: none;
+    text-decoration: none;
+    text-align: center;
+    align-self: center;
+    color: #232331;
+}
+header img {
+    width: 80px;
+    border: solid 3px #eaaadd;
+    box-shadow: 5px 5px 10px #6f7364;
+    justify-self: left;
+}
+nav a:hover {
+    background-color: #ebebf3;
+}
+
+/* Footer bar css */
+footer {
+    background-color: #667c84;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+footer div {
+    padding: 10px;
+}
+.logo img {
+    width: 80px;
+    border: solid 3px #eaaadd;
+    box-shadow: 5px 5px 10px #6f7364;
+    justify-self: left;
+}
+.logo {
+    padding: 10px;
+}
+.links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.links a {
+    padding: 10px;
+    color: #232331;
+    font-size: 1.5em;
+}
+.social {
+    justify-self: center;
+    align-self: center;
+}
+.social a {
+    padding: 15px;
+}
+
+/* Home page css */
+#home {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr .3fr;
+}
+#content {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+#welcome {
+    text-align: center;
+    padding: 30px;
+    margin: 10px auto;
+    border-bottom: #eaaadd solid 5px;
+    width: 90%;
+}
+#welcome p {
+    font-size: 1.2em;
+    padding: 10px;
+}
+#first-img {
+    width: 70%;
+    padding-top: 35px
+}
+#first-img img {
+    width: 100%
+}
+#about-us {
+    text-align: center;
+    padding: 30px;
+    margin: 10px auto;
+    border-bottom: #eaaadd solid 5px;
+    width: 90%;
+}
+#about-us p {
+    font-size: 1.2em;
+    padding: 10px;
+}
+#second-img {
+    width: 40%;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+#second-img img {
+    width: 100%
+}
+#advertise {
+    text-align: center;
+    padding-top: 35px;
+    border-top: #eaaadd solid 5px;
+    width: 90%;
+    justify-self: center;
+    font-size: 1.2em;
+}
+#advertise div {
+    padding: 15px;
+}
+#view-gallery h4, #view-orders h4 {
+    padding-bottom: 30px;
+}
+#view-gallery a, #view-orders a {
+    background-color: #667c84;
+    color: white;
+    border: #eaaadd solid 3px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+#view-gallery a:hover, #view-orders a:hover {
+    opacity: .6;
+}
