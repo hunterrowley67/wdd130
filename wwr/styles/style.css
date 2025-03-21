@@ -37,8 +37,8 @@ nav {
     justify-content: space-around;
 }
 nav a {
-    text-align: center;
     color: #0b1d21;
+    text-align: center;
     text-decoration: none;
     padding: 35px;
 }
