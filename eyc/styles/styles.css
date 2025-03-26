@@ -8,19 +8,33 @@ body {
     padding: 0;
     margin: 0;
     background-color: #ebebf3;
-    font-family: "Cormorant+Garamond", Courier, Trebuchet;
+    font-family: "Cormorant Garamond", Courier, Trebuchet;
+    font-size: 18px;
 }
 h1, h2 {
     font-family: "birthstone", Georgia, Garamond;
     font-size: 3em;
 }
-
+.button {
+    background-color: #667c84;
+    color: white;
+    border: #eaaadd solid 3px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+main {
+    margin-top: 100px;
+}
 /* Nav bar css */
 header {
     background-color: #667c84;
     display: grid;
     grid-template-columns: 150px auto;
     width: 100%;
+    position: fixed;
+    top: 0;
 }
 nav {
     background-color: #667c84;
@@ -144,19 +158,12 @@ footer div {
 }
 #advertise div {
     padding: 15px;
+    margin: 50px 0;
 }
 #view-gallery h4, #view-orders h4 {
     padding-bottom: 30px;
 }
-#view-gallery a, #view-orders a {
-    background-color: #667c84;
-    color: white;
-    border: #eaaadd solid 3px;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    box-shadow: 5px 5px 10px #6f7364;
-}
+
 #view-gallery a:hover, #view-orders a:hover {
     opacity: .6;
 }
