@@ -15,43 +15,29 @@
            <a href="orders.html">Orders</a>
         </nav>
     </header>
-    <main id="gallery">
+    <main id="gallery-page">
        <div id="intro">
             <h1>Our Gallery:</h1>
             <p>We know it's difficult to decide what kind of gift to give, we hope that looking at our gallery of crocheted gifts will help you find the perfect gift to give the one dear to your heart! These are some of our favorite crocheted gifts we have ever made!</p>
        </div>
-       <div id="gallery-row-one">
-            <div class="arrow left-arrow" onclick="moveLeft()">&#10094;</div>
-            <div id="row-one-images">
+       <div class="gallery-container">
+            <div class="gallery">
                 <img src="images/bee-opt.jpg" alt="bee">
                 <img src="images/elephant-opt.jpg" alt="elephant-opt">
                 <img src="images/ewok-opt.jpg" alt="ewok">
-                <img src="images/fournome-opt.jpg" alt="four gnomes">
                 <img src="images/fox-opt.jpg" alt="fox">
-            </div>
-            <div class="arrow right-arrow" onclick="moveRight()">&#10095;</div>
-       </div>
-       <div id="gallery-row-two">
-            <div class="arrow left-arrow" onclick="moveLeft()">&#10094;</div>
-            <div id="row-two-images">
                 <img src="images/frog-opt.jpg" alt="frog">
                 <img src="images/grogu-opt.jpg" alt="grogu">
                 <img src="images/jelly-opt.jpg" alt="jellyfish">
                 <img src="images/jellyhat-opt.jpg" alt="jellyfish with a hat">
                 <img src="images/jellymustache-opt.jpg" alt="jellyfish with a mustache">
-            </div>
-            <div class="arrow right-arrow" onclick="moveRight()">&#10095;</div>
-       </div>
-       <div id="gallery-row-three">
-            <div class="arrow left-arrow" onclick="moveLeft()">&#10094;</div>
-            <div id="row-three-images">
                 <img src="images/marriagenome-opt.jpg" alt="marriage gnome">
                 <img src="images/minion-opt.jpg" alt="minion">
-                <img src="images/owl-opt.jpg" alt="owl">
                 <img src="images/snake-opt.jpg" alt="snake">
+                <img src="images/owl-opt.jpg" alt="owl">
+                <img src="images/fournome-opt.jpg" alt="four gnomes">
                 <img src="images/threenome-opt.jpg" alt="three gnomes">
             </div>
-            <div class="arrow right-arrow" onclick="moveRight()">&#10095;</div>
         </div>
         <div id="advertise-orders">
             <h4>Saw a pattern you liked? Don't hesitate to reach out and order it today!</h4>
@@ -73,6 +59,26 @@
         </div>
         <p>&copy; Elizabeth's Yarn</p>
     </footer>
-    <script></script>
+    <script>
+        let currentIndex = 0;
+
+        function moveLeft() {
+            const gallery = document.querySelector('.gallery');
+            const images = document.querySelectorAll('.gallery img');
+            if (currentIndex > 0) {
+                currentIndex--;
+                gallery.style.transform = `translateX(-${currentIndex * 100}%)`;
+            }
+        }
+
+        function moveRight() {
+            const gallery = document.querySelector('.gallery');
+            const images = document.querySelectorAll('.gallery img');
+            if (currentIndex < images.length - 1) {
+                currentIndex++;
+                gallery.style.transform = `translateX(-${currentIndex * 100}%)`;
+            }
+        }
+    </script>
 </body>
 </html>

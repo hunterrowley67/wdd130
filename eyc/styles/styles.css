@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
 }
+
 body {
     padding: 0;
     margin: 0;
@@ -11,10 +12,13 @@ body {
     font-family: "Cormorant Garamond", Courier, Trebuchet;
     font-size: 18px;
 }
-h1, h2 {
+
+h1,
+h2 {
     font-family: "birthstone", Georgia, Garamond;
     font-size: 3em;
 }
+
 .button {
     background-color: #667c84;
     color: white;
@@ -24,9 +28,13 @@ h1, h2 {
     text-decoration: none;
     box-shadow: 5px 5px 10px #6f7364;
 }
+.button:hover {
+    opacity: .6;
+}
 main {
     margin-top: 100px;
 }
+
 /* Nav bar css */
 header {
     background-color: #667c84;
@@ -35,7 +43,9 @@ header {
     width: 100%;
     position: fixed;
     top: 0;
+    z-index: 2;
 }
+
 nav {
     background-color: #667c84;
     display: flex;
@@ -43,7 +53,9 @@ nav {
     justify-content: space-around;
     width: 100%;
 }
-nav a, header a{
+
+nav a,
+header a {
     padding: 20px;
     text-decoration: none;
     text-decoration: none;
@@ -51,12 +63,14 @@ nav a, header a{
     align-self: center;
     color: #232331;
 }
+
 header img {
     width: 80px;
     border: solid 3px #eaaadd;
     box-shadow: 5px 5px 10px #6f7364;
     justify-self: left;
 }
+
 nav a:hover {
     background-color: #ebebf3;
 }
@@ -67,35 +81,43 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+
 footer div {
     padding: 10px;
 }
+
 .logo img {
     width: 80px;
     border: solid 3px #eaaadd;
     box-shadow: 5px 5px 10px #6f7364;
     justify-self: left;
 }
+
 .logo {
     padding: 10px;
 }
+
 .links {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
+
 .links a {
     padding: 10px;
     color: #232331;
     font-size: 1.5em;
 }
+
 .social {
     justify-self: center;
     align-self: center;
 }
+
 .social a {
     padding: 15px;
 }
+
 .x {
     width: 65px;
 }
@@ -106,11 +128,13 @@ footer div {
     grid-template-columns: 1fr;
     grid-template-rows: 2fr .3fr;
 }
+
 #content {
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
 }
+
 #welcome {
     text-align: center;
     padding: 30px;
@@ -118,17 +142,21 @@ footer div {
     border-bottom: #eaaadd solid 5px;
     width: 90%;
 }
+
 #welcome p {
     font-size: 1.2em;
     padding: 10px;
 }
+
 #first-img {
     width: 70%;
     padding-top: 35px
 }
+
 #first-img img {
     width: 100%
 }
+
 #about-us {
     text-align: center;
     padding: 30px;
@@ -136,18 +164,22 @@ footer div {
     border-bottom: #eaaadd solid 5px;
     width: 90%;
 }
+
 #about-us p {
     font-size: 1.2em;
     padding: 10px;
 }
+
 #second-img {
     width: 40%;
     padding-top: 35px;
     padding-bottom: 35px;
 }
+
 #second-img img {
     width: 100%
 }
+
 #advertise {
     text-align: center;
     padding-top: 35px;
@@ -156,14 +188,64 @@ footer div {
     justify-self: center;
     font-size: 1.2em;
 }
+
 #advertise div {
     padding: 15px;
     margin: 50px 0;
 }
-#view-gallery h4, #view-orders h4 {
+
+#view-gallery h4,
+#view-orders h4 {
     padding-bottom: 30px;
 }
 
-#view-gallery a:hover, #view-orders a:hover {
-    opacity: .6;
+
+
+/* Gallery Page */
+#gallery-page {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: .1fr 1fr .1fr;
+}
+#intro {
+    text-align: center;
+    margin: 20px auto;
+    width: 80%;
+    box-sizing: border-box;
+    border-bottom: #eaaadd solid 5px;
+    padding: 40px;
+    font-size: 1.2em;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-self: center;
+    gap: 30px;
+    margin-top: 20px;
+    margin-bottom: 45px;
+
+}
+.gallery img {
+    box-sizing: border-box;
+    border: #eaaadd solid 2px;
+    border-radius: 5px;
+    width: 100%;
+    transition: transform .5s;
+}
+.gallery img:hover {
+    transform: scale(1.1);
+    z-index: 1;
+}
+#advertise-orders {
+    box-sizing: border-box;
+    border-top: #eaaadd solid 5px;
+    width: 80%;
+    text-align: center;
+    justify-self: center;
+    padding: 30px;
+}
+#advertise-orders h4 {
+    font-size: 1.5em;
+    padding: 25px;
+    margin-bottom: 10px;
 }
