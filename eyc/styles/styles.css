@@ -209,8 +209,8 @@ footer div {
 }
 #intro {
     text-align: center;
-    margin: 20px auto;
-    width: 80%;
+    margin: 10px auto;
+    width: 90%;
     box-sizing: border-box;
     border-bottom: #eaaadd solid 5px;
     padding: 40px;
@@ -239,7 +239,7 @@ footer div {
 #advertise-orders {
     box-sizing: border-box;
     border-top: #eaaadd solid 5px;
-    width: 80%;
+    width: 90%;
     text-align: center;
     justify-self: center;
     padding: 30px;
@@ -248,4 +248,63 @@ footer div {
     font-size: 1.5em;
     padding: 25px;
     margin-bottom: 10px;
+}
+
+/* Orders Page */
+
+#orders {
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: 1.2em;
+}
+
+#info {
+    margin: 10px auto;
+    text-align: center;
+    padding: 40px;
+
+}
+#info p {
+    padding: 25px;
+    margin-bottom: 15px;
+}
+#process {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+}
+#process-img {
+    justify-self: left;
+    margin: 10px;
+}
+#process-img img{
+   border: solid #eaaadd 4px;
+}
+#process-text {
+    align-self: center;
+}
+#process-text h2 {
+    margin-bottom: 20px;
+}
+#order-section {
+    justify-self: center;
+    text-align: center;
+    width: 90%;
+    padding: 30px;
+    margin-bottom: 25px;
+}
+#order-section p, #order-section h2 {
+    margin-bottom: 20px;
+}
+#order-section h4 {
+    margin-bottom: 30px;
+}
+#lower-image {
+    justify-self: center;
+}
+#lower-image img {
+    margin: 20px auto;
+    border: solid #eaaadd 5px;
 }
