@@ -18,7 +18,7 @@
     <main id="gallery-page">
        <div id="intro">
             <h1>Our Gallery:</h1>
-            <p>We know it's difficult to decide what kind of gift to give, we hope that looking at our gallery of crocheted gifts will help you find the perfect gift to give the one dear to your heart! These are some of our favorite crocheted gifts we have ever made!</p>
+            <p>We know it's difficult to decide what kind of gift to give. We hope that looking at our gallery of crocheted gifts will help you find the perfect gift for the one dear to your heart! These are some of our favorite crocheted gifts we have ever made!</p>
        </div>
        <div class="gallery-container">
             <div class="gallery">
@@ -59,26 +59,5 @@
         </div>
         <p>&copy; Elizabeth's Yarn</p>
     </footer>
-    <script>
-        let currentIndex = 0;
-
-        function moveLeft() {
-            const gallery = document.querySelector('.gallery');
-            const images = document.querySelectorAll('.gallery img');
-            if (currentIndex > 0) {
-                currentIndex--;
-                gallery.style.transform = `translateX(-${currentIndex * 100}%)`;
-            }
-        }
-
-        function moveRight() {
-            const gallery = document.querySelector('.gallery');
-            const images = document.querySelectorAll('.gallery img');
-            if (currentIndex < images.length - 1) {
-                currentIndex++;
-                gallery.style.transform = `translateX(-${currentIndex * 100}%)`;
-            }
-        }
-    </script>
 </body>
 </html>
